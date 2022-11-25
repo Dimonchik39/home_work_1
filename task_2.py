@@ -15,6 +15,9 @@ print('x y z')
 for x in range(2):
     for y in range(2):
         for z in range(2):
+            a_side = not (x or y or z)
+            b_side = not x and not y and not z
             result = a_side == b_side
             if result == True:
                 print(x, y, z, result)
+                
